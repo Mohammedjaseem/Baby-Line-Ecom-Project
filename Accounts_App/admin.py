@@ -5,8 +5,8 @@ from .models import profileregister_model
 # Register your models here.
 
 class profileregister_modelAdmin(admin.ModelAdmin):
-    list_display = ('user_id', 'name', 'dob', 'pincode', 'address')
-    list_filter = ('user_id', 'name', 'dob', 'pincode', 'address')
+    list_display  = ('user_id', 'name', 'dob', 'pincode', 'address')
+    list_filter   = ('user_id', 'name', 'dob', 'pincode', 'address')
     search_fields = ('user_id', 'name', 'dob', 'pincode', 'address')
     list_per_page = 25
 

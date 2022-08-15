@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from .forms import NewUserForm, profile_register
-from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.template import loader
@@ -66,11 +65,13 @@ def login_user(request):
     context = {
         'form': form
         }
+ 
     return render(request, 'Accounts/login/login.html', context)
-
+    
 def logout_request(request):
     logout(request)
     return redirect('/')
+
 
 @login_required(login_url='/accounts/login_user')
 def profile(request, id):

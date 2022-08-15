@@ -6,6 +6,7 @@ from django.contrib.staticfiles.urls import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('babyline_admin/', include('Admin_App.urls')),
     path('', include('Home_App.urls')),
     path('accounts/', include('Accounts_App.urls')),
     path('admin/clearcache/', include('clearcache.urls')),
