@@ -1,35 +1,34 @@
 <!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
 <html lang="en" dir="ltr">
-
-
-<!-- Mirrored from loopinfosol.in/themeforest/ekka-html-v32/ekka-admin/main-category.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Aug 2022 07:42:21 GMT -->
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Ekka - Admin Dashboard HTML Template.">
 
-	<title>Ekka - Admin Dashboard HTML Template.</title>
+	<title>Babyline - Admin Dashboard.</title>
 
 	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
 
-	<link href="../../../../cdn.jsdelivr.net/npm/%40mdi/font%404.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
+	<link href="{% static 'bablyline_admin_panel/cdn/cdn.jsdelivr.net/npm/%40mdi/font%404.4.95/css/materialdesignicons.min.css' %}" rel="stylesheet" />
 
 	<!-- PLUGINS CSS STYLE -->
-	<link href="assets/plugins/simplebar/simplebar.css" rel="stylesheet" />	
+	<link href="{% static 'bablyline_admin_panel/assets/plugins/simplebar/simplebar.css' %}" rel="stylesheet" />	
 
 	<!-- Data Tables -->
-	<link href='assets/plugins/data-tables/datatables.bootstrap5.min.css' rel='stylesheet'>
-	<link href='assets/plugins/data-tables/responsive.datatables.min.css' rel='stylesheet'>
+	<link href="{% static 'bablyline_admin_panel/assets/plugins/data-tables/datatables.bootstrap5.min.css' %}" rel='stylesheet'>
+	<link href='{% static 'bablyline_admin_panel/assets/plugins/data-tables/responsive.datatables.min.css' %}' rel='stylesheet'>
 
 	<!-- ekka CSS -->
-	<link id="ekka-css" rel="stylesheet" href="assets/css/ekka.css" />
+	<link id="ekka-css" rel="stylesheet" href="{% static 'bablyline_admin_panel/assets/css/ekka.css' %}" />
 
 	<!-- FAVICON -->
-	<link href="assets/img/favicon.png" rel="shortcut icon" />
+	<link href="{% static 'bablyline_admin_panel/assets/img/favicon.png' %}" rel="shortcut icon" />
 </head>
 
 <body class="ec-header-fixed ec-sidebar-fixed ec-sidebar-dark ec-header-light" id="body">
@@ -43,7 +42,7 @@
 
 				<div class="ec-brand">
 					<a href="index.html" title="Ekka">
-						<img class="ec-brand-icon" src="assets/img/logo/ec-site-logo.png" alt="" />
+						<img class="ec-brand-icon" src="{% static 'bablyline_admin_panel/assets/img/logo/ec-site-logo.png ' %}" alt="" />
 						<span class="ec-brand-name text-truncate">Ekka</span>
 					</a>
 				</div>
@@ -318,12 +317,12 @@
 							<li class="dropdown user-menu">
 								<button class="dropdown-toggle nav-link ec-drop" data-bs-toggle="dropdown"
 									aria-expanded="false">
-									<img src="assets/img/user/user.png" class="user-image" alt="User Image" />
+									<img src="{% static 'bablyline_admin_panel/assets/img/user/user.png ' %}" class="user-image" alt="User Image" />
 								</button>
 								<ul class="dropdown-menu dropdown-menu-right ec-dropdown-menu">
 									<!-- User image -->
 									<li class="dropdown-header">
-										<img src="assets/img/user/user.png" class="img-circle" alt="User Image" />
+										<img src="{% static 'bablyline_admin_panel/assets/img/user/user.png ' %}" class="img-circle" alt="User Image" />
 										<div class="d-inline-block">
 											John Deo <small class="pt-1">john.example@gmail.com</small>
 										</div>
@@ -389,7 +388,7 @@
 														<a href="javscript:void(0)"
 															class="media media-message media-notification">
 															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u2.jpg"
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u2.jpg ' %}"
 																	alt="Image">
 																<span class="status away"></span>
 															</div>
@@ -414,7 +413,7 @@
 														<a href="javscript:void(0)"
 															class="media media-message media-notification media-active">
 															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u1.jpg"
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u1.jpg  ' %}"
 																	alt="Image">
 																<span class="status active"></span>
 															</div>
@@ -439,7 +438,7 @@
 														<a href="javscript:void(0)"
 															class="media media-message media-notification">
 															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u5.jpg"
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u5.jpg ' %}"
 																	alt="Image">
 																<span class="status away"></span>
 															</div>
@@ -606,7 +605,7 @@
 														<a href="javscript:void(0)"
 															class="media media-message media-notification">
 															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u6.jpg"
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u6.jpg ' %}"
 																	alt="Image">
 																<span class="status away"></span>
 															</div>
@@ -631,7 +630,7 @@
 														<a href="javscript:void(0)"
 															class="media media-message media-notification">
 															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u7.jpg"
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u7.jpg ' %}"
 																	alt="Image">
 																<span class="status away"></span>
 															</div>
@@ -655,8 +654,8 @@
 													<li>
 														<a href="javscript:void(0)"
 															class="media media-message media-notification media-active">
-															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u1.jpg"
+															<div class="position-relative mr-3"> 
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u1.jpg ' %}"
 																	alt="Image">
 																<span class="status active"></span>
 															</div>
@@ -681,7 +680,7 @@
 														<a href="javscript:void(0)"
 															class="media media-message media-notification">
 															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u2.jpg"
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u2.jpg ' %}"
 																	alt="Image">
 																<span class="status away"></span>
 															</div>
@@ -706,7 +705,7 @@
 														<a href="javscript:void(0)"
 															class="media media-message media-notification">
 															<div class="position-relative mr-3">
-																<img class="rounded-circle" src="assets/img/user/u5.jpg"
+																<img class="rounded-circle" src="{% static 'bablyline_admin_panel/assets/img/user/u5.jpg ' %}"
 																	alt="Image">
 																<span class="status away"></span>
 															</div>
@@ -1010,7 +1009,7 @@
 
 											<tbody>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/clothes.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/clothes.png ' %}" alt="Product Image" /></td>
 													<td>Clothes</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1045,7 +1044,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/footwear.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/footwear.png ' %}" alt="Product Image" /></td>
 													<td>Footwear</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1079,7 +1078,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/jewelry.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/jewelry.png' %}" alt="Product Image" /></td>
 													<td>Jewelry</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1113,7 +1112,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/perfume.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/perfume.png' %}" alt="Product Image" /></td>
 													<td>Perfume</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1147,7 +1146,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/cosmetics.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/cosmetics.png' %}" alt="Product Image" /></td>
 													<td>Cosmetics</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1187,7 +1186,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/glasses.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/glasses.png' %}" alt="Product Image" /></td>
 													<td>Glasses</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1219,7 +1218,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/bag.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/bag.png' %}" alt="Product Image" /></td>
 													<td>Bags</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1253,7 +1252,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/footwear.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/footwear.png' %}" alt="Product Image" /></td>
 													<td>Footwear</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1287,7 +1286,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/jewelry.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/jewelry.png' %}" alt="Product Image" /></td>
 													<td>Jewelry</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1321,7 +1320,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td><img class="cat-thumb" src="assets/img/category/perfume.png" alt="Product Image" /></td>
+													<td><img class="cat-thumb" src="{% static 'bablyline_admin_panel/assets/img/category/perfume.png' %}" alt="Product Image" /></td>
 													<td>Perfume</td>
 													<td>
 														<span class="ec-sub-cat-list">
@@ -1380,26 +1379,25 @@
 	</div> <!-- End Wrapper -->
 
 	<!-- Common Javascript -->
-	<script src="assets/plugins/jquery/jquery-3.5.1.min.js"></script>
-	<script src="assets/plugins/jquery/jquery.notify.min.js"></script>
-	<script src="assets/plugins/jquery/jquery.bundle.notify.min.js"></script>
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/plugins/tags-input/bootstrap-tagsinput.js"></script>
-	<script src="assets/plugins/simplebar/simplebar.min.js"></script>
-	<script src="assets/plugins/jquery-zoom/jquery.zoom.min.js"></script>
-	<script src="assets/plugins/slick/slick.min.js"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/jquery/jquery-3.5.1.min.js' %}"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/jquery/jquery.notify.min.js' %}"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/jquery/jquery.bundle.notify.min.js' %}"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/tags-input/bootstrap-tagsinput.js' %}"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/simplebar/simplebar.min.js' %}"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/jquery-zoom/jquery.zoom.min.js' %}"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/slick/slick.min.js' %}"></script>
 
 	<!-- Data Tables -->
-	<script src='assets/plugins/data-tables/jquery.datatables.min.js'></script>
-	<script src='assets/plugins/data-tables/datatables.bootstrap5.min.js'></script>
-	<script src='assets/plugins/data-tables/datatables.responsive.min.js'></script>
+	<script src='{% static 'bablyline_admin_panel/assets/plugins/data-tables/jquery.datatables.min.js ' %}'></script>
+	<script src='{% static 'bablyline_admin_panel/assets/plugins/data-tables/datatables.bootstrap5.min.js ' %}'></script>
+	<script src='{% static 'bablyline_admin_panel/assets/plugins/data-tables/datatables.responsive.min.js ' %}'></script>
 
 	<!-- Option Switcher -->
-	<script src="assets/plugins/options-sidebar/optionswitcher.js"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/plugins/options-sidebar/optionswitcher.js ' %}"></script>
 
 	<!-- Ekka Custom -->
-	<script src="assets/js/ekka.js"></script>
+	<script src="{% static 'bablyline_admin_panel/assets/js/ekka.js ' %}"></script>
 </body>
 
-<!-- Mirrored from loopinfosol.in/themeforest/ekka-html-v32/ekka-admin/main-category.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Aug 2022 07:42:26 GMT -->
 </html>

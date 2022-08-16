@@ -54,3 +54,16 @@ class product_model(models.Model):
 
     def __str__(self):
         return self.name
+
+
+#for new templated admin panel
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    description = models.TextField(blank=True)
+    city = models.CharField(max_length=100, blank=True)
+    website = models.URLField(blank=True)
+    phone = models.IntegerField(blank=True)
+    image = models.ImageField(upload_to='images/profile', blank=True)
+    def __str__(self):
+        return self.user.username

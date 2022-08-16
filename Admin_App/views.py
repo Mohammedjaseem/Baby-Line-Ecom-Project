@@ -59,14 +59,38 @@ def admin_login(request):
     template = ('Admin_panel/sign-in.html') 
     return render(request, template, context)
 
+#admin panel main
 @login_required(login_url='/babyline_admin/admin_login')
 def admin_panel(request):
     template = 'Admin_panel/index.html'
     return render(request, template)
 
+
+#logout admin
 def logout_request(request):
     logout(request)
     return redirect('/babyline_admin/admin_login')
+
+#main_category here
+@login_required(login_url='/babyline_admin/admin_login')
+def main_category(request):
+
+    template = 'Admin_panel/main-category.html'
+    return render(request, template)
+
+
+#sub_category here
+@login_required(login_url='/babyline_admin/admin_login')
+def sub_category(request):
+
+    template = 'Admin_panel/sub-category.html'
+    return render(request, template)
+
+@login_required(login_url='/babyline_admin/admin_login')
+def user_grid(request):
+    template = 'Admin_panel/user-card.html'
+    return render(request, template)
+
 
 
 

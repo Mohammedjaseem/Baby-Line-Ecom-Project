@@ -57,7 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #10163b; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8137,7 +8137,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
-  background: #f8f9fd;
+  background: #10163b;
   color: gray; }
 
 a {
